@@ -1,3 +1,5 @@
+
+/*
 let time = 2000,
       currentImageIndex = 0,
       image = document
@@ -11,9 +13,12 @@ let time = 2000,
 
             }, time) 
             
-            
+        
             
             
         }
 
-        window.addEventListener("load", start)
+        window.addEventListener("load", start) */
+
+
+   
