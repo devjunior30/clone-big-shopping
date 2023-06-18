@@ -79,6 +79,9 @@ aside {
     width: 75%;
     height: 70vh;
     padding: 50px 125px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 41px;
 }
 
 a {
@@ -106,6 +109,12 @@ button:hover {
     color: black;
     border-radius: 17px;
 }
+
+#meuH3 {
+    color: red;
+    display: block;
+}
+
 
 #primeiroParagrafo {
     font-size: 13px;
@@ -142,22 +151,21 @@ button:hover {
 
 #eventos {
     display: inline-block;
-    background-color: black;
+    
 }
 
 #lojas {
     display: inline-block;
-    background-color: black;
+    
 }
 
 #projetos {
     display: inline-block;
-    background-color: black;
 }
 
 
 #element {
-    background-color: red;
+   /* background-color: red; */
 }
 
 #primeiroH1 {
