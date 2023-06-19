@@ -1,24 +1,30 @@
-
 /*
-let time = 2000,
-      currentImageIndex = 0,
-      image = document
-                   .querySelectorAll("slider img")
-        max = images.lenght;
+let time = 2000
 
-        function start() {
-            setInterval(() => {
+let currentImageIndex = 0
 
-                console.log("função rodada")
+let  img = document.querySelectorAll("#img img")
 
-            }, time) 
+let    max = images.length;
+
+function nextImage() {
+
+    images[currentImageIndex]
+         .classList.remove("elements")
+
+    currentImageIndex++ 
+
+    if(currentImageIndex >= max)
+      currentImageIndex = 0
+
+      images[currentImageIndex]
+              .classList.add("elements")
+
             
-        
-            
-            
-        }
-
-        window.addEventListener("load", start) */
+      imgs.style.transform = `translateX(${-idx * 500}px)`
+}
 
 
+window.addEventListener("load", start)
    
+

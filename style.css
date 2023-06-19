@@ -6,17 +6,27 @@
 }
 
 header {
-    position: static;
-    width: 100%;
-    padding-bottom: 65px;
-    border-radius: 0px;
-    background-color: rgb(245, 255, 250);
-    box-shadow: inset 0 0 1em red;
-    top: 0;
+   bottom: 0;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 100%;
+   height: 25%;
+   background: transparent;
+   border: 0;
+   margin: 0;
+   outline: 0;
+   padding: 0;
+   vertical-align: baseline;
 }
+
 #header {
     position: fixed;
+    background-color: white;
+    box-shadow: var(--shd-scrl,0 0 5px rgba(0,0,0,.5));
 }
+
 
 
 #imgBigInicial {
@@ -30,58 +40,33 @@ header {
     padding: 10px 10px 10px 10px;
     cursor: pointer;
     font-size: 20px;
-    margin-right: 26px;
     text-decoration: underline 0.25em rgba(0, 0, 0, 0);
     transition: text-decoration-color 500ms;
     color: black;
     letter-spacing: -1px;
-    position: relative;
-    top: 51px;
-    right: 36px;
+    margin-left: 27px;
 }
 
 .linkInicial:hover {
     text-decoration-color: black;
 }
 
-
-#slider {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    height: 315px;
-    z-index: -1;
-    margin-top: 214px;
-}
-
-#slider img {
-    opacity: 0;
-    position: absolute;
-    margin-left: 26%;
-    width: 50%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-#slider img.selected {
-    opacity: 1;
+#primeiroH1 {
+    text-align: center;
+    font-size: 66px;
+    color: #0C4A7C;
+    margin-bottom: 55px;
+    margin-top: 55px;
 }
 
 #menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 41px;
     
 }
 
 aside {
-    width: 75%;
-    height: 70vh;
-    padding: 50px 125px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 41px;
+ margin-right: 50px;
 }
 
 a {
@@ -91,15 +76,14 @@ a {
 button {
     display: block;
     background-color: blue;
-    width: 180px;
+    width: 189px;
     height: 44px;
     padding: 9px;
     color: white;
     margin-left: auto;
     margin-right: auto;
     border: none;
-    
-    margin-top: 5px;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -111,8 +95,19 @@ button:hover {
 }
 
 #meuH3 {
-    color: red;
+    color: #696969;
     display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 38px;
+    margin-bottom: 47px;
+}
+
+strong {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
 }
 
 
@@ -123,6 +118,10 @@ button:hover {
     line-height: 25px;
     color: #696969;
     font-weight: 400;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #segundoParagrafo {
@@ -132,6 +131,10 @@ button:hover {
     line-height: 25px;
     color: #696969;
     font-weight: 400;
+    width: 310px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #terceiroParagrafo {
@@ -141,45 +144,49 @@ button:hover {
     line-height: 25px;
     color: #696969;
     font-weight: 400;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.imgs {
-    width: 235px;
-    border: none;
-    cursor: pointer;
-}
 
-#eventos {
+
+#eventos, #lojas, #projetos {
     display: inline-block;
     
 }
 
-#lojas {
+#sectionCinema{
     display: inline-block;
-    
-}
-
-#projetos {
-    display: inline-block;
-}
-
-
-#element {
-   /* background-color: red; */
-}
-
-#primeiroH1 {
-    text-align: center;
-    font-size: 66px;
-    color: #0C4A7C;
-    margin-bottom: 55px;
-    margin-top: 55px;
-}
-
-#brink {
-    position: relative;
+    width: 150px;
+    position: absolute;
     z-index: -1;
-    margin-left: 20%;
-    margin-bottom: 60px;
-    cursor: pointer;
+    background-color: black;
+}
+
+.elements {
+    width: 246px;
+    position: absolute;
+    display: flex;
+}
+
+#cinema2D {
+    display: inline-block;
+}
+
+.cima {
+    margin-bottom: 19px;
+}
+
+#cinema3D {
+    display: inline-block;
+}
+
+.absoluta {
+   margin-left: 50%;
+}
+
+.p {
+   
 }
